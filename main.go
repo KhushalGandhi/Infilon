@@ -12,7 +12,7 @@ var db *sql.DB
 
 func main() {
 	var err error
-	dsn := "postgresql://postgres:new+password@localhost:5432/cetec?sslmode=disable"
+	dsn := "postgresql://username:password@localhost:5432/cetec?sslmode=disable"
 	db, err = sql.Open("postgres", dsn)
 	if err != nil {
 		log.Fatal(err)
